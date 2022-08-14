@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Inconsolata:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+
 /* this header */
 
 header{
@@ -54,25 +58,39 @@ a:hover {
     content: "";
     position: absolute;
     height: 4px;
-    width: 100px;
-    background: orange;
+    width: 120px;
+    top: 47px;
+    background:linear-gradient(45deg, #dc3b3e, #3b99dc 50%, #3bdc90 75%, rgb(255 141 0) 100%);
     border-radius: 10px;
     bottom: 0;
     transform: translateX(110px);
     opacity: 0;
-    transition: all 0.3s cubic-bezier(.55, 0, .1, 1);
+    transition: all 0.7s cubic-bezier(.75, 0, .1, 1);
     
 }
+
 .menu ul li:hover::before {
     transform: translateX(0px);
     opacity: 1;
     width: 20px;
 }
-.rotate-words {
-    display: inline;
-    margin-left: 10px;
+.F-logo{
+    width:60px;
+    height: 30px;
+    padding-top: 5px;
+    margin-left: 350px;
+    padding: 5px;
+    box-shadow: 0px 0px 2px white;
+    margin-top: 20px;
+
+    
+    
 }
 
+ .rotate-words {
+    display: inline;
+    margin-left: 10px;   
+}
 .rotate-words span {
     width: max-content;
     position: absolute;
@@ -83,6 +101,7 @@ a:hover {
     opacity: 0;
     transform-origin: 10% 75%;
     animation: rotateWords 12s var(--d) linear infinite;
+    margin-top: 20px;
 }
 @keyframes rotateWords {
     5% {
@@ -92,21 +111,21 @@ a:hover {
     10%,
     20% {
         opacity: 1;
-        transform: rotate(3deg);
+        transform: rotateY(3deg);
     }
 
     15% {
-        transform: rotate(-1deg);
+        transform: rotateY(-1deg);
 
     }
 
     25% {
         opacity: 0;
-        transform: translateY(90px) rotate(10deg);
+        transform: translateX(90px) rotate(10deg);
 
     }
 
-}
+} 
 
 /* name-text */
 
@@ -138,15 +157,18 @@ a:hover {
 }
 
 /* about */
-.about{
+section{
     background-color: #000000;
     mix-blend-mode:darken;
     color: white;
     width: 100%;
-    height: 60%;
+    height: 100%;
     background-size: cover;
    
   
+}
+.about{
+    color: white;
 }
 .intro-line{
     display: grid;
@@ -159,7 +181,11 @@ a:hover {
     margin-left: 35%;
     margin-top: 10%;
     border-radius: 4px;
+    filter: grayscale(100);
     opacity: 0.8;
+}
+.dp img:hover{
+    filter: grayscale(0);
 }
 .intro {
     padding-left: 15%;
@@ -171,20 +197,102 @@ a:hover {
 }
 
 /* skills */
- .skills{
-    margin-top: 10px;
-    margin-left: 15%;
-    margin-right: 15%;
-    
-    
-    
- }
- .skills-page{
-    background-color: gray;
-    padding: -5pxc;
- }
 
- summary{
-    font-weight: bold;
+
+
+
+
+
+
+/* Service */
+.service{
+    background-color: black;
+    width: 100%;
+    height: 600px;
+    padding:45px 100px ;
+}
+.service div{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: goldenrod;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    text-shadow: 2px 1px 3px white;
+}
+.box{
+    /* border: 2px solid white; */
+    width: 100%;
+    height: 400px;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    display: flex;
     
+}
+.card{
+    background-color: gray;
+    width: 50%;
+    height: 250px;
+    margin-top: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: 2s;
+    border-radius: 3px;
+}
+.card:hover{
+    transition: 2s;
+    transform: scale(1.2);
+    box-shadow: -2px -2px 6px white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+ footer{
+    background-color: #1d293a;
+    margin-top: 20px;
+    padding-top: 25px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+ }
+footer ul{
+    text-decoration: none;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+ }
+ footer li{
+    background-color: #111a28;
+    color: white;
+    width: 100px;
+    margin-right: 10px;
+    height: 40px;
+    
+ }
+ footer li p{
+    border-radius: 3px;
+    margin: 0;
+   
+ }
+ footer .progress{
+    left: 0;
+    background-color: #00cf5d;
+    height: 3px;
+    width: 100%;
+    bottom: 0;
+    border-radius: 4px;
  }
