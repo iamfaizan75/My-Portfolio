@@ -42,6 +42,7 @@ nav ul li{
   display: inline-block;
   list-style: none;
   margin: 10px 10px;
+  cursor: pointer;
   
 }
 nav ul li a{
@@ -378,6 +379,7 @@ footer ul{
   display: flex;
   text-transform: uppercase;
   font-weight: bold;
+  list-style: none;
 }
 footer li{
   background-color: #111a28;
@@ -392,9 +394,15 @@ footer li p{
   margin: 0;
  
 }
+footer a{
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
 footer .progress{
   left: 0;
-  background-color: #00cf5d;
+  background-color: orange;
   height: 3px;
   width: 100%;
   bottom: 0;
