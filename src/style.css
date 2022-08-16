@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
 
 
+
 /* this header */
 
 @media screen and (orientation: landscape){
@@ -17,93 +18,75 @@ header{
 .bg-color{
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
-  height: 700px;
+  height: 100vh;
 }
 nav{
-  display: grid;
-  grid-template-columns: 8fr 4fr;
-  
-  
-}
-.left-side{
   display: flex;
-  color: white;
-}
-.title{
-  text-shadow: 2px 2px 6px rgb(201, 150, 150);
-}
-/* right side menu bar */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 
-ul{
-  list-style-type: none;
-  margin-top: 9px;
-  width: 770px;
-  padding-bottom: 30px;
-  padding-top: 2px;
 }
-a{
- text-decoration: none;
-  color: white;
+.container{
+  padding: 15px 0px;
 }
-
-a:hover {
-  color: #7DCEA0;
-}
-.menu ul li {
-  padding: 15px 20px;
-  position: relative;
-  overflow: hidden;
-}
-
-/* animation on menu */
-.menu ul li::before {
-  content: "";
-  position: absolute;
-  height: 4px;
-  width: 120px;
-  top: 47px;
-  background:linear-gradient(45deg, #dc3b3e, #3b99dc 50%, #3bdc90 75%, rgb(255 141 0) 100%);
-  border-radius: 10px;
-  bottom: 0;
-  transform: translateX(110px);
-  opacity: 0;
-  transition: all 0.7s cubic-bezier(.75, 0, .1, 1);
-  
-}
-
-.menu ul li:hover::before {
-  transform: translateX(0px);
-  opacity: 1;
-  width: 20px;
-}
-.F-logo{
+.logo{
   width:80px;
   height: 70px;
-
-  margin-right: 0px;
-  padding: 5px;
   opacity: 0.6;
-  margin-top: 1px;
-
-  
+  margin-left: -60px;
   
 }
 
-.rotate-words {
-  /* display: inline; */
-  margin-left: 200px;   
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 10px;
+  
 }
-.rotate-words span {
+nav ul li a{
+  text-decoration: none;
+  color: rgb(157, 156, 156);
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background:linear-gradient(55deg, #F5B041 65%,  rgb(255, 255, 255) 35%);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+a:hover{
+  color: #fff;
+}
+nav ul li a:hover::after{
+  width: 100%;
+  
+}
+
+.greeting{
+  opacity: 0.7;
+}
+.greeting span {
   width: max-content;
   position: absolute;
   background-color: darkgoldenrod;
   border-radius: 3px;
   box-shadow: 1px 1px 6px grey;
+  color: white;
   padding-inline: 10px;
   opacity: 0;
+  top: 30px;
+  left: 300px;
   transform-origin: 10% 75%;
   animation: rotateWords 12s var(--d) linear infinite;
-  margin-top: 20px;
+  
 }
 @keyframes rotateWords {
   5% {
@@ -131,31 +114,32 @@ a:hover {
 
 /* name-text */
 
-.name-text{
-  display: grid;
-  grid-template-columns: 7fr 5fr;
-  padding: 3px;
+.header-text{
+  margin-top: 10%;
+  font-size: 30px;
+  color: rgb(226, 220, 220);
 }
-.name-heading{
-  padding-left: 15%;
-  margin-top: 13%;
-  color: white;
-}
-.name-heading p {
+.header-text p {
   font-family: 'Inconsolata', monospace;
   font-size: 1.8rem;
 }
-.name-heading h3{
+.header-text h1{
+  font-size: 50px;
+  margin-top: 20px;
+  width: 50%;
   font-family: 'Baloo Bhaina 2';
-  font-size: 2.5rem;
-  word-spacing: 0.3rem;
-  width: 80%;
+  font-size: 2.9rem;
 }
-.img{
-  padding-left: 15%;
-  margin-top: -5%;
-  padding-top: 0;
-  opacity: 0.9; 
+.header-text h1 span{
+  color: rgb(190, 22, 22);
+}
+.text-image{
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+ 
+ 
+
+
 }
 
 /* about */
