@@ -115,8 +115,9 @@ nav ul li a:hover::after{
   opacity: 0;
   top: 30px;
   left: 300px;
+  
   transform-origin: 10% 75%;
-  animation: rotateWords 12s var(--d) linear infinite;
+  animation: rotateWords 10s var(--d) linear infinite;
   
 }
 @keyframes rotateWords {

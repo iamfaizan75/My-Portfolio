@@ -11,7 +11,7 @@
      <title>My-Portfolio</title>
      </head>
      
-    <body class="container-fluid p-0">
+    <body class="container-fluid p-0" onload="bodyload()">
 
     <header id="Home">
      <div class="bg-color">
@@ -20,12 +20,13 @@
         <nav>
           <img src="Img/F-logo--removebg-preview.png" alt="" class="logo"> 
          
-         <div class="greeting">
-          <span style="--d: 1s">Hello</span>
-          <span style="--d: 4s">Assalam walekum</span>
-          <span style="--d: 7s">Namaste</span>
+          <div class="greeting">
+          <span style="--d: 1s">Hello!</span>
+          <span style="--d: 4s" id="status"></span>
+          <span style="--d: 8s" id="time"></span>
+          <span style="--d: 13s" id="date"></span>
          </div>
-          
+        
          <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -236,7 +237,7 @@
                         <!-- <h1 class="sub-title">My Work</h1> -->
                         <div class="work-list">
                           <div class="work">
-                            <img src="img/hbg.jpg" alt="">
+                            <img src="img/Hotel-reg.png" alt="">
                             <div class="layer">
                               <h3>Hotel Form</h3>
                                <p>Hotel Registration with total Amount </p>
@@ -247,7 +248,7 @@
                             </div>
                           </div>
                           <div class="work">
-                            <img src="img/unnamed.png" alt="">
+                            <img src="img/BMI-W.png" alt="">
                             <div class="layer">
                               <h3>BMI</h3>
                                <p>Working on processs... </p>
@@ -409,7 +410,32 @@
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
   }
+    
+  // for time-date
 
+  function Clock(){
+            var now = new Date();
+            document.getElementById("time").innerHTML = now.toLocaleTimeString();
+            document.getElementById("date").innerHTML = now.toLocaleDateString();
+        }
+        function bodyload(){
+            setInterval(Clock,1000);
+            var date = new Date();
+            var hrs = date.getHours();
+            var status = document.getElementById("status");
+            var statusIcon = document.getElementById("statusIcon");
+
+            if (hrs>0 && hrs<12) {
+                status.innerHTML = "Good Morning";
+               statusIcon.className = "bi bi-sun";
+            } else if (hrs>12 && hrs<19) {
+                status.innerHTML = "Good Afternoon";
+               statusIcon.className = "bi bi-sun";
+            } else if (hrs>19 && hrs<24) {
+                status.innerHTML = "Good Night";
+                statusIcon.className = "bi bi-sun-fill";
+            }
+        }
 </script>  
 </body>
 </html>
