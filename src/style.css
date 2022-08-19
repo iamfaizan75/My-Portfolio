@@ -372,7 +372,7 @@ section h4{
  padding: 40px 0px 0px 310px;
 }
 
-main{
+.box{
   display: flex;
   align-items: center;
   justify-content: space-between;
