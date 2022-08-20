@@ -649,18 +649,38 @@ nav svg{
 @media only screen and (max-width: 600px){
   
   header{
-    background: none;
-    /* background-size: cover;
-    width: 300px; */
-    
+    background: url(../Img/Bg.jpg);
+    background-size: cover;
+    width:100%;
+     
+  }
+  nav ul li{
+    display: none;
   }
   .greeting{
     display: none;
   }
-  footer{
+  footer ul {
     display: none;
-    
   }
+  footer{
+   background-color: #07374a;
+   height: 10vh;
+  }
+  footer .copy{
+    margin-left: 8%;
+  }
+ footer #back-top svg{
+  font-size: 18px;
+  color:white ;
+  background-color: rgb(174, 70, 70);
+ }
+ footer svg:hover{
+  color: red;
+  background-color: black;
+ }
+    
+  
    
   
   .logo{
@@ -791,7 +811,8 @@ nav svg{
     margin-left: 10px;
   }
   .contact-right .form-group{
-    flex-basis: 78%;
+    flex-basis: 100%;
+    width: 100%;
     padding-left: 30px;
   }
   .contact-right .btn{
