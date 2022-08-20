@@ -644,6 +644,7 @@ footer .progress{
 nav svg{
   display: none;
 }
+
 /* ---------css for small screen---------------- */
 @media only screen and (max-width: 600px){
   
@@ -660,29 +661,30 @@ nav svg{
     display: none;
     
   }
+   
   
-  nav ul li{
-    display: none;
-  }
   .logo{
     margin-left: 2px;
-    width: 50px;
-    height: 7vh;
+    width: 85px;
+    height: 15vh;
     margin-top: -10px;
   }
+  
   .header-text{
-    margin-top: 60%;
+    margin-top: 30%;
     line-height: 33px;
     width: 400px;
+    height: 50vh;
     letter-spacing: 0;
     word-spacing: 12;
-    font-size: 16px;
+    font-size: 20px;
     margin-left: 19px;
   }
   .header-text h1{
-    font-size: 20px;
+    font-size: 22px;
     width: 240px;
    line-height: 30px;
+ 
   }
   section h4{
     font-size: 20px;
@@ -690,35 +692,46 @@ nav svg{
     margin-right: 50px;
   }
   .dp img{
-    width: 60%;
-    height: 25%;
-    margin-left:30px;
-    padding: 0;
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+    margin-top: 15%;
+    border-radius: 4px;
+    filter: grayscale(100);
+    opacity: 0.8;
+  }
+  .dp img:hover{
+    filter: grayscale(0);
+  }
+  .intro-line{
+    display: block;
+    text-align: justify;
+    margin-top: 10px;
+   
   }
   .intro{
-    font-size: 16px;
-    padding-left:0;
-    padding-right:32%;
+    font-size: 18px;
+    padding-left:10%;
+    padding-right:10%;
     word-spacing: 0px;
-    overflow-x:scroll;
+    
   }
   .tab-titles{
     display: block;
     width: 160px;
     font-size: 16px;
-    margin-left: 20px;
+    margin-left: 15%;
     font-weight: lighter;
   }
-  .tab-contents{
-    padding-right: 0px;
-  }
+  
   .tab-contents .skills-bar{
-    padding-left: 10px;
+    padding-left: 10%;
     
   }
   .tab-contents li{
     padding-left: 0px;
     font-size: 16px;
+    text-align: justify;
   }
   .tab-contents ul li span{
     font-size: 18px;
@@ -739,14 +752,32 @@ nav svg{
     margin-left: 13px;
     margin-top: 20px;
   }
+  #Service{
+    padding: 10px 10%;
+  }
   .Work-Section{
-    padding: 10px 0 0 40px;
+    padding: 10px 20%;
   }
   .btn-link{
-    margin-left: 20px;
+    margin-left: 35%;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
   }
+  .contact-left .text-left{
+    margin-top: -60px;
+    margin-left: 18%;
+    font-size: 22px;
+
+  }
+  .contact-left p{
+    margin-left: 15%;
+    line-height: 35px;
+  }
+ 
   #contact .container{
-    padding-left: 10px;
+    margin-left: 15%;
   }
   .contact-left svg{
     font-size: 16px;
@@ -756,11 +787,11 @@ nav svg{
     padding-left: 15px;
   }
   .social-icons{
-    font-size: 1px;
+    font-size: 2px;
     margin-left: 10px;
   }
   .contact-right .form-group{
-    flex-basis: 60%;
+    flex-basis: 78%;
     padding-left: 30px;
   }
   .contact-right .btn{
