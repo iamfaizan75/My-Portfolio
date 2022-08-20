@@ -40,7 +40,7 @@ body{
 header{
   background: url(../Img/port-bg-1.jpg);
   width: 100%;
-  height: 700px;
+  height: 90vh;
   background-size: cover;
 }
 
@@ -645,14 +645,23 @@ nav svg{
   display: none;
 }
 /* ---------css for small screen---------------- */
-@media only screen and (max-width:600px){
+@media only screen and (max-width: 600px){
+  
   header{
-    background: url(../Img/Bg.jpg);
-    background-size: cover;
-    width: 600px;
-    height: 80vh;
+    background: none;
+    /* background-size: cover;
+    width: 300px; */
+    
   }
   .greeting{
+    display: none;
+  }
+  footer{
+    display: none;
+    
+  }
+  
+  nav ul li{
     display: none;
   }
   .logo{
@@ -662,44 +671,102 @@ nav svg{
     margin-top: -10px;
   }
   .header-text{
-    margin-top: 50%;
+    margin-top: 60%;
+    line-height: 33px;
     width: 400px;
     letter-spacing: 0;
-    word-spacing: 0;
+    word-spacing: 12;
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 19px;
   }
   .header-text h1{
     font-size: 20px;
     width: 240px;
-    margin-top: -10px;
+   line-height: 30px;
   }
-  nav svg{
+  section h4{
+    font-size: 20px;
+    color: rgb(224, 224, 224);
+    margin-right: 50px;
+  }
+  .dp img{
+    width: 60%;
+    height: 25%;
+    margin-left:30px;
+    padding: 0;
+  }
+  .intro{
+    font-size: 16px;
+    padding-left:0;
+    padding-right:32%;
+    word-spacing: 0px;
+    overflow-x:scroll;
+  }
+  .tab-titles{
     display: block;
-    font-size: 25px;
-    color: white;
+    width: 160px;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: lighter;
   }
-  nav ul{
-    background-color: orange;
-    position: fixed;
-    top: 0;
-    right: -200;
-    width: 200px;
-    height: 100vh;
-    padding-top: 30px;
-    z-index: 2;
+  .tab-contents{
+    padding-right: 0px;
+  }
+  .tab-contents .skills-bar{
+    padding-left: 10px;
     
   }
-  nav ul li{
-    display: block;
-    margin: 25px;
-  
+  .tab-contents li{
+    padding-left: 0px;
+    font-size: 16px;
+  }
+  .tab-contents ul li span{
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .skills-bar .bar{
+    padding: 10px 0%;
    
   }
-  nav ul svg{
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
+  .skills-bar .bar .progress-line{
+    width: 270px;
+  }
+  .skills-bar .bar .info span{
+    font-size: 16px;
+    
+  }
+  .service-list{
+    margin-left: 13px;
+    margin-top: 20px;
+  }
+  .Work-Section{
+    padding: 10px 0 0 40px;
+  }
+  .btn-link{
+    margin-left: 20px;
+  }
+  #contact .container{
+    padding-left: 10px;
+  }
+  .contact-left svg{
+    font-size: 16px;
+     }
+  .contact-left p{
+    font-size: 16px;
+    padding-left: 15px;
+  }
+  .social-icons{
+    font-size: 1px;
+    margin-left: 10px;
+  }
+  .contact-right .form-group{
+    flex-basis: 60%;
+    padding-left: 30px;
+  }
+  .contact-right .btn{
+    width: 90px;
+        padding: 5px;
+    font-size: 16px;
   }
 }
+
