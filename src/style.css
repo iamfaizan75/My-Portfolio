@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Inconsolata:wght@200&display=swap');
-
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
-
-
 
 
 /* width */
@@ -14,7 +10,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: hsl(120, 75% 50% / 1);
+  background: hsl(200, 18%, 26%);
   border-radius: 100vw;
   margin-block: 0.25em; 
   
@@ -29,7 +25,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background:hsl(120, 100% 5% / 1);
+  background:hsl(232, 50%, 45%);
   
 }
 
@@ -40,7 +36,7 @@ body{
 header{
   background: url(../Img/port-bg-1.jpg);
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
 }
 
@@ -137,9 +133,9 @@ nav ul li a:hover::after{
       opacity: 0;
       transform: translateX(90px) rotate(10deg);
 
-  }
+    } 
+  } 
 
-} 
 
 /* -----------------------name-text------------------------ */
 
@@ -334,7 +330,7 @@ section h4{
   border: 7px solid transparent;
   border-bottom-width: 0px;
   border-right-width: 0px;
-  border-top-style: #f0f0f0;
+  
   border-top-color: #f0f0f0;
 }
 
@@ -402,7 +398,7 @@ section h4{
 
 .skills-heading h4 {
   margin-bottom: 2rem;
-  text-shadow: 2px 2px 2px 6px orange;
+  text-shadow: 2px 2px  6px rgb(174, 70, 70);
 }
 
  .card:nth-child(1) {
@@ -457,7 +453,7 @@ section h4{
   display: block;
   transition: transform 0.5s;
  opacity: 0.6;
-  filter: blur(10%);
+  
 }
 .layer{
   width: 74%;
@@ -518,7 +514,7 @@ section h4{
 
 }
 .btn-link:hover{
-  background: darkred;
+  background: hsl(24, 71%, 53%);
   color: white;
 }
 
@@ -683,7 +679,7 @@ nav svg{
     width: 400px;
     height: 50vh;
     letter-spacing: 0;
-    word-spacing: 12;
+    word-spacing: 12px;
     font-size: 20px;
     margin-left: 19px;
   }
