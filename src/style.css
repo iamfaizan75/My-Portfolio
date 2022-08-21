@@ -382,11 +382,16 @@ section h4{
   margin-top: 30px;
   margin-left: 150px;
 }
-
+.card:hover{
+  transform: scale(1.1);
+  transition: 2s;
+}
 .card{
   width: 280px;
   height: 280px;
   flex: 0 0 100%;
+  
+  transition: 2s;
 }
 .card-text p {
   font-size: 17px;
@@ -644,6 +649,9 @@ footer .progress{
 nav svg{
   display: none;
 }
+.scroll svg{
+  display: none;
+}
 
 /* ---------css for small screen---------------- */
 @media only screen and (max-width: 600px){
@@ -819,6 +827,11 @@ nav svg{
     width: 90px;
         padding: 5px;
     font-size: 16px;
+  }
+  .scroll svg{
+    display: block;
+    font-size: 25px;
+    color: white;
   }
 }
 
